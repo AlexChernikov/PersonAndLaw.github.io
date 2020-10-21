@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=SF+Pro+Display&display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Юридическая помощь</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/login.js"></script>
+</head>
+<body>
+<div id="id01" class="modal">
+    <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="heading">Здравствуйте!</div>
+        <div class="message">
+            <p>Для входа введите</p>
+            <p>логин и пароль</p>
+        </div>
+
+        <div class="input-wrapper0">
+            <input id="login" type="text" placeholder="Your@email.com"/>
+        </div>
+        <div class="input-wrapper1">
+            <input id="password" type="password" placeholder="Password"/>
+        </div>
+        <div class="cont">
+            <button onclick="validate()" class="enter" type="button">Вход→</button>
+        </div>
+
+    </form>
+</div>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <svg width="38" height="32" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.1504 20.1667V19.3712C28.1504 19.1202 28.5481 18.5 29.0386 18.5H33.2576C33.7481 18.5 34.1458 19.1202 34.1458 19.3712V20.1667" stroke="#18A0FB" stroke-width="2"/>
+            <path d="M24.9387 23.5181V29.5417C24.9387 30.0019 25.3222 30.375 25.7952 30.375H36.5012C36.9742 30.375 37.3577 30.0019 37.3577 29.5417V23.5181M24.9387 23.5181L24.9387 21.2083C24.9387 20.7481 25.3222 20.375 25.7952 20.375H36.5012C36.9742 20.375 37.3577 20.7481 37.3577 21.2083V23.5181M24.9387 23.5181H37.3577" stroke="black"/>
+            <path d="M29.9352 23.8334V23.1667H32.3611V23.8334H29.9352Z" fill="#18A0FB" stroke="#18A0FB"/>
+            <path d="M30.2917 23.5H32.0047" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.50436 26.3667L10.8729 21.9412C14.9957 25.1918 17.4169 25.3049 21.9603 21.9412L30.3288 26.3667C30.9637 26.7736 31.3515 27.5016 31.3515 28.2866C31.3515 29.5264 30.401 30.5315 29.2284 30.5315H3.60473C2.43221 30.5315 1.48169 29.5264 1.48169 28.2866C1.48169 27.5016 1.86947 26.7736 2.50436 26.3667Z" fill="white"/>
+            <path d="M20.4423 19.4898C21.7966 18.3863 22.5888 16.8956 22.8895 15.947C25.2576 15.947 25.4155 11.4647 23.521 11.4647C23.521 11.4647 23.6127 10.8514 23.6467 9.90648V8.50366M20.4423 19.4898C19.4266 20.3175 18.0946 20.9273 16.4166 20.9273C12.5013 20.9273 10.4699 17.6071 9.94366 15.947C7.57555 15.947 7.41765 11.4647 9.31216 11.4647C9.31216 11.4647 9.2205 10.8514 9.1865 9.90648V8.50366M20.4423 19.4898C20.4423 19.4898 20.9912 21.3202 21.9603 21.9412M10.8729 21.9412L2.50436 26.3667C1.86947 26.7736 1.48169 27.5016 1.48169 28.2866C1.48169 29.5264 2.43221 30.5315 3.60473 30.5315H29.2284C30.401 30.5315 31.3515 29.5264 31.3515 28.2866C31.3515 27.5016 30.9637 26.7736 30.3288 26.3667L21.9603 21.9412M10.8729 21.9412C11.842 21.3202 12.3908 19.4898 12.3908 19.4898M10.8729 21.9412C14.9957 25.1918 17.4169 25.3049 21.9603 21.9412" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.9896 12.25C13.9896 12.4788 13.7951 12.6875 13.526 12.6875C13.257 12.6875 13.0625 12.4788 13.0625 12.25C13.0625 12.0212 13.257 11.8125 13.526 11.8125C13.7951 11.8125 13.9896 12.0212 13.9896 12.25ZM19.7708 12.25C19.7708 12.4788 19.5763 12.6875 19.3073 12.6875C19.0383 12.6875 18.8438 12.4788 18.8438 12.25C18.8438 12.0212 19.0383 11.8125 19.3073 11.8125C19.5763 11.8125 19.7708 12.0212 19.7708 12.25Z" fill="black" stroke="black"/>
+            <path d="M8.24487 3.375H24.5886V7.5C24.5886 7.77614 24.3648 8 24.0886 8H8.74487C8.46873 8 8.24487 7.77614 8.24487 7.5V3.375Z" fill="#18A0FB" stroke="#18A0FB"/>
+            <path d="M2.927 12.7188V4.68304C2.927 2.90784 4.22118 1.46875 5.81763 1.46875M16.4163 1.46875H5.57651C5.17739 1.46875 4.85385 1.78355 4.85385 2.17188C4.85385 2.5602 5.17739 2.875 5.57651 2.875H16.4163M16.4163 1.46875H27.2562C27.6553 1.46875 27.9788 1.78355 27.9788 2.17188C27.9788 2.5602 27.6553 2.875 27.2562 2.875H16.4163M16.4163 1.46875V2.875" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.26546 19.3056L2.92693 11.3125L4.5881 19.3056C4.68247 19.6811 4.25358 19.9736 3.92307 19.7592L3.84134 19.7062C3.63043 19.5693 3.34388 19.6771 3.2824 19.9164C3.18984 20.2766 2.66372 20.2766 2.57116 19.9164C2.50968 19.6771 2.22313 19.5693 2.01222 19.7062L1.93049 19.7592C1.59998 19.9736 1.17109 19.6811 1.26546 19.3056Z" fill="#18A0FB"/>
+            <path d="M2.92693 11.3125L3.41647 11.2108C3.36826 10.9788 3.16386 10.8125 2.92694 10.8125C2.69001 10.8125 2.48561 10.9788 2.43739 11.2107L2.92693 11.3125ZM1.26546 19.3056L1.75038 19.4275L1.7529 19.4175L1.755 19.4074L1.26546 19.3056ZM4.5881 19.3056L4.09856 19.4074L4.10066 19.4175L4.10318 19.4275L4.5881 19.3056ZM1.93049 19.7592L1.6584 19.3397L1.65839 19.3397L1.93049 19.7592ZM2.01222 19.7062L1.74012 19.2867L1.74012 19.2867L2.01222 19.7062ZM3.84134 19.7062L4.11344 19.2867L4.11344 19.2867L3.84134 19.7062ZM3.92307 19.7592L3.65097 20.1786L3.65097 20.1787L3.92307 19.7592ZM2.57116 19.9164L3.05543 19.792L2.57116 19.9164ZM2.43739 11.2107L0.775925 19.2039L1.755 19.4074L3.41646 11.4143L2.43739 11.2107ZM2.43739 11.4142L4.09856 19.4074L5.07764 19.2039L3.41647 11.2108L2.43739 11.4142ZM2.20259 20.1787L2.28431 20.1256L1.74012 19.2867L1.6584 19.3397L2.20259 20.1787ZM3.56924 20.1256L3.65097 20.1786L4.19517 19.3397L4.11344 19.2867L3.56924 20.1256ZM3.76666 20.0408C3.7533 20.0929 3.71503 20.1258 3.68187 20.1382C3.64905 20.1506 3.60579 20.1493 3.56925 20.1256L4.11344 19.2867C3.62751 18.9715 2.94809 19.2083 2.79813 19.792L3.76666 20.0408ZM2.28431 20.1256C2.24777 20.1493 2.20451 20.1506 2.17169 20.1382C2.13853 20.1258 2.10026 20.0929 2.08689 20.0408L3.05543 19.792C2.90547 19.2083 2.22605 18.9715 1.74012 19.2867L2.28431 20.1256ZM4.10318 19.4275C4.10013 19.4154 4.10015 19.3938 4.1091 19.3724C4.11672 19.3541 4.12699 19.3447 4.13321 19.3405C4.13946 19.3362 4.14849 19.3324 4.16128 19.3319C4.17688 19.3313 4.18987 19.3363 4.19516 19.3397L3.65097 20.1787C4.32834 20.618 5.28799 20.039 5.07301 19.1838L4.10318 19.4275ZM0.780547 19.1838C0.565574 20.039 1.52522 20.618 2.20259 20.1786L1.65839 19.3397C1.66368 19.3363 1.67668 19.3313 1.69228 19.3319C1.70507 19.3324 1.7141 19.3362 1.72035 19.3405C1.72657 19.3447 1.73684 19.3541 1.74446 19.3724C1.75341 19.3938 1.75343 19.4154 1.75038 19.4275L0.780547 19.1838ZM2.08689 20.0408C2.30811 20.9018 3.54545 20.9018 3.76666 20.0408L2.79813 19.792C2.80499 19.7653 2.82527 19.7329 2.85689 19.7105C2.88409 19.6913 2.90927 19.6866 2.92678 19.6866C2.94429 19.6866 2.96947 19.6913 2.99667 19.7105C3.02829 19.7329 3.04857 19.7653 3.05543 19.792L2.08689 20.0408Z" fill="#18A0FB"/>
+        </svg>
+        <span>Человек и закон</span>
+    </div>
+    <div id="menu">
+        <a href="#" onclick="slowScroll('#main')" title="Услуги">Услуги</a>
+        <a href="#" onclick="slowScroll('#about')" title="О компании">О компании</a>
+        <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+        <a href="#" onclick="slowScroll('#staff')" title="Сотрудники">Сотрудники</a>
+        <a href="#" onclick="slowScroll('#feedback')" title="Отзывы">Отзывы</a>
+    </div>
+    <div id="button">
+        <a href="#" onclick="openForm()">Вход</a>
+    </div>
+</header>
+
+<div id="top">
+    <h1 id="first-part">Подготовка и составление</h1>
+    <h1>правовых документов</h1>
+</div>
+
+<div id="main">
+    <h1>Консультируем по вопросам</h1>
+    <div class="intro">
+        <h2>Вопросы по приватизации</h2>
+        <span>Первичное консультирование<br/>
+        Подготовка полного пакета документов<br/>
+        Подача документов в гос органы<br/>
+        Регистрация права собственности</span>
+    </div>
+    <div class="intro">
+        <h2>Уголовные дела</h2>
+        <span>Консультация адвоката<br/>
+        Выезд адвоката в СИЗО<br/>
+        Защита на предварительном следствии<br/>
+        Защита учатников дела в суде</span>
+    </div>
+    <div class="intro">
+        <h2>Пенсионные дела</h2>
+        <span>Консультация пенсионного юриста<br/>
+        Отстаивание интересов пенсионеров<br/>
+        Защита военных пенсионеров<br/>
+        Представление интересов в суде</span>
+    </div>
+    <div class="intro">
+        <h2>Банковские споры</h2>
+        <span>Консультация банковского юриста<br/>
+        Выстраивание стратегии защиты<br/>
+        Анализ кредитных документов<br/>
+        Юридическое сопровождение в суде</span>
+    </div>
+    <div class="intro">
+        <h2>Автоюрист</h2>
+        <span>Консультация автоюриста<br/>
+        Выезд юриста на место ДТП<br/>
+        Оценка событий<br/>
+        Выявление процессуальных нарушений</span>
+    </div>
+    <div class="intro">
+        <h2>Вопросы наследства</h2>
+        <span>Бесплатная консультация юриста<br/>
+        Оформление наследства<br/>
+        Восстановление сроков<br/>
+        Установление факта принятия наследства</span>
+    </div>
+    <div class="intro">
+        <h2>Трудовые споры</h2>
+        <span>Бесплатная консультация юриста<br/>
+        Помощь в составлении жалоб, претензий<br/>
+        Восстановление в должности<br/>
+        Помощь юриста при незаконном увольнении</span>
+    </div>
+    <div class="intro">
+        <h2>Кредитные вопросы</h2>
+        <span>Снижение кредита в судебном порядке<br/>
+        Помощь в оформлении банкротства<br/>
+        Отмена судебных приказов<br/>
+        Отмена или отсрочка взыскания</span>
+    </div>
+    <div class="intro">
+        <h2>Вопросы по банкротству</h2>
+        <span>Бесплатная консультация юриста<br/>
+        Ведение процедуры рефинансирования<br/>
+        Ведение процедуры реструктуризации<br/>
+        Отказ от взаимодействия с банками</span>
+    </div>
+    <div class="intro">
+        <h2>Вопросы гражданства</h2>
+        <span>Бесплатная консультация юриста<br/>
+        Помощь в получении ВНЖ<br/>
+        Сбор всех необходимых документов<br/>
+        Полное сопровождение юриста</span>
+    </div>
+</div>
+<div id="about">
+    <img src="images/about_us.png">
+    <div class="about_us">
+        <h2>Юридическая компания “Закон и человек”</h2>
+        <span>ООО“Закон и Человек” – это крупный
+            коллектив адвокатов и юристов с
+            большим накопленным опытом во всех
+            сферах юриспруденции, госслужбы и службы
+            в МВД. Профессионализм наших юристов,
+            оперативность выполнения дел, оказание
+            услуг до положительного результата – это
+            гарант успешного решения любых юридических проблем.</span>
+    </div>
+</div>
+<div id="consultation">
+    <img src="images/consultation.png">
+    <div class="consultation">
+        <h2>Бесплатная юридическая консультация</h2>
+        <span>Для тех, кто имеет льготы в соответствии
+            с ФЗ-324, есть возможность получить юридические услуги бесплатно.
+            В остальных случаях услуги они оказываются на договорной основе.
+            Наши расценки не превышают средние
+            по Москве, в то время как высокое качество мы гарантируем!
+            Звоните на горячую линию или оставьте заявку – мы вам перезвоним!</span>
+    </div>
+</div>
+<div id="contacts">
+    <h1>Свяжитесь с нами любым удобным способом</h1>
+    <div class="intro">
+        <svg width="56" height="55" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.5544 36.7831C25.4909 32.7222 20.2983 26.828 17.6509 23.3154C17.0126 22.4684 16.9257 21.3399 17.3742 20.3788L19.5693 15.6749C20.0287 14.6906 19.9201 13.5348 19.2854 12.6533L12.8942 3.77664C11.8351 2.30566 9.72341 2.10267 8.40347 3.34496L3.09798 8.33836C2.40717 8.98854 2.05342 9.92628 2.21809 10.8605C6.10204 32.896 38.7763 55.3588 45.4285 52.8002C49.6506 51.1764 52.2558 47.5575 53.5373 44.8765C54.0955 43.7086 53.6004 42.3671 52.53 41.6392L42.6133 34.8959C41.7603 34.3158 40.6691 34.2147 39.724 34.6282L34.3034 36.9997C33.4057 37.3924 32.3685 37.3284 31.5544 36.7831Z" stroke="#18A0FB" stroke-width="4"/>
+        </svg>
+        <h2>ТЕЛЕФОН:</h2>
+        <h3>+7 (495) 456-42-11</h3>
+    </div>
+    <div class="intro">
+        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26.091 51.2372C9.16283 51.2372 0 40.6726 0 27.0334C0 12.4582 10.3177 0.762573 28.7647 0.762573C42.2283 0.762573 52 9.51157 52 21.5647C52 40.4407 29.6183 45.4241 30.7407 34.6557C29.2023 37.0564 26.7237 39.7561 21.9592 39.7561C16.5078 39.7561 13.1192 35.7651 13.1192 29.3409C13.1192 19.7122 19.448 11.5764 26.9403 11.5764C30.5348 11.5764 33.007 13.4744 34.0405 16.3886L35.0458 12.8526H40.1115C39.5828 14.6552 35.0827 31.3277 35.0827 31.3277C33.6787 37.1041 38.0077 37.2059 41.847 34.1379C49.0598 28.5479 49.4325 13.9294 39.6847 7.83241C29.2392 1.56857 5.46217 5.44474 5.46217 26.6672C5.46217 38.8244 14.0205 46.9927 26.7583 46.9927C34.203 46.9927 38.766 44.9777 42.5642 42.7721L45.1143 46.4511C41.4072 48.5441 35.4488 51.2372 26.091 51.2372ZM21.0123 20.2431C19.4632 23.1464 18.4622 26.9077 18.4622 29.8284C18.4622 37.6501 26.0932 37.6999 29.8415 30.3462C31.3842 27.3259 32.3787 23.4757 32.3787 20.5334C32.3787 14.2132 24.8062 13.0931 21.0123 20.2431Z" fill="#18A0FB"/>
+        </svg>
+        <h2>ПОЧТА:</h2>
+        <h3>uristmoscow@gmail.com</h3>
+    </div>
+    <div class="intro">
+        <svg width="40" height="58" viewBox="0 0 40 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6944 2C10.4093 2 2 9.37317 2 18.471C2 26.6795 8.24904 36.3245 16.8341 49.5749C17.7619 51.0069 18.717 52.481 19.6944 54C20.6719 52.481 21.627 51.0069 22.5548 49.5749C31.1398 36.3245 37.3889 26.6795 37.3889 18.471C37.3889 9.37317 28.9818 2 19.6944 2Z" stroke="#18A0FB" stroke-width="4"/>
+        </svg>
+        <h2>АДРЕС:</h2>
+        <h3>г. Москва, ул. Тверская, д.6, стр.1</h3>
+    </div>
+    <div class="intro">
+        <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.1818 54.3636C42.6416 54.3636 54.3636 42.6416 54.3636 28.1818C54.3636 13.722 42.6416 2 28.1818 2C13.722 2 2 13.722 2 28.1818C2 42.6416 13.722 54.3636 28.1818 54.3636Z" stroke="#18A0FB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M27.7583 8.31177V28.1822L19.8926 36.0479" stroke="#18A0FB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M27.9041 30.3636C29.0609 30.3636 29.9987 29.4217 29.9987 28.2598C29.9987 27.0979 29.0609 26.156 27.9041 26.156C26.7473 26.156 25.8096 27.0979 25.8096 28.2598C25.8096 29.4217 26.7473 30.3636 27.9041 30.3636Z" fill="#18A0FB"/>
+        </svg>
+        <h2>РЕЖИМ РАБОТЫ:</h2>
+        <h3>без перерывов и выходных</h3>
+        <h3>с 9:00 до 21:00.</h3>
+    </div>
+</div>
+<div id="staff">
+    <h1 id="staff_title">Наши сотрудники</h1>
+    <h1 id="slogan">Всегда готовы придти Вам на помощь и ответить на любые вопросы</h1>
+    <div class="intro">
+        <img src="images/staff/Dmitry_Baranov.png"/>
+        <h2>Специалист <br/>по трудовым спорам</h2>
+        <h3>Стаж : 5 лет.</h3>
+    </div>
+    <div class="intro">
+        <img src="images/staff/Ekaterina_Budko.png"/>
+        <h2>Специалист <br/>по кредитным вопросам</h2>
+        <h3>Стаж : 7 лет.</h3>
+    </div>
+    <div class="intro">
+        <img src="images/staff/Angelina_Khalturina.png"/>
+        <h2>Специалист <br/>по трудовым спорам</h2>
+        <h3>Стаж : 3 года.</h3>
+    </div>
+    <div class="intro">
+        <img src="images/staff/Evgeniy_Budko.png"/>
+        <h2>Специалист <br/>по вопросам наследства</h2>
+        <h3>Стаж : 6 лет.</h3>
+    </div>
+    <div class="intro">
+        <img src="images/staff/Evgeniy_Dashin.png"/>
+        <h2>Специалист <br/>по уголовным делам</h2>
+        <h3>Стаж : 5 лет.</h3>
+    </div>
+    <div class="intro">
+        <img src="images/staff/Irina_Baranova.png"/>
+        <h2>Специалист <br/>по пенсионным делам</h2>
+        <h3>Стаж : 7 лет.</h3>
+    </div>
+    <div class="intro">
+        <img src="images/staff/Evgeniy_Pozov.png"/>
+        <h2>Специалист <br/>по вопросам гражданства</h2>
+        <h3>Стаж : 4 года.</h3>
+    </div>
+    <div class="intro">
+        <img src="images/staff/Anastasya_Tsoi.png"/>
+        <h2>Специалист <br/>по банковским спорам</h2>
+        <h3>Стаж : 12 лет.</h3>
+    </div>
+</div>
+<div id="feedback">
+    <h1 id="feedback_title">Отзывы</h1>
+    <div id="left_arrow">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="18" fill="#333333" fill-opacity="0.6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5216 16.4521C16.5436 17.2524 16.5436 18.7478 17.5216 19.548L21.5383 22.8344C21.9398 23.1628 21.9398 23.7766 21.5383 24.1051C21.2359 24.3525 20.8011 24.3525 20.4987 24.1051L14.9289 19.548C13.9509 18.7478 13.9509 17.2524 14.9289 16.4521L20.4987 11.895C20.8011 11.6476 21.2359 11.6476 21.5383 11.895C21.9398 12.2235 21.9398 12.8373 21.5383 13.1657L17.5216 16.4521Z" fill="white"/>
+        </svg>
+    </div>
+    <div id="intro">
+        <img id="icon" src="images/feedback/Oleg_Davidovich.png"/>
+        <div id="name_company">
+            <h2 id="name">Олег Давидович</h2><br>
+            <h2 id="company">ООО "Артемида"</h2><hr>
+        </div>
+        <div id="feedback_message">
+            <h3>
+                Доброго время суток. Выражаю огромную <br>
+                благодарность компании “Человек и закон”. <br>
+                Особенно юристам которые вели наше дело. <br>
+                Дмитрий Баранов и Евгений Позов. За высокие <br>
+                профессиональные качества, оперативность <br>
+                и ответственность. Очень доволен результатом!
+            </h3>
+        </div>
+    </div>
+    <div id="right_arrow">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle r="18" transform="matrix(-1 0 0 1 18 18)" fill="#333333" fill-opacity="0.6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.4785 16.4521C19.4565 17.2524 19.4565 18.7478 18.4785 19.548L14.4618 22.8344C14.0604 23.1628 14.0604 23.7766 14.4618 24.1051C14.7642 24.3525 15.1991 24.3525 15.5014 24.1051L21.0712 19.548C22.0493 18.7478 22.0493 17.2524 21.0712 16.4521L15.5014 11.895C15.1991 11.6476 14.7642 11.6476 14.4618 11.895C14.0604 12.2235 14.0604 12.8373 14.4618 13.1657L18.4785 16.4521Z" fill="white"/>
+        </svg>
+    </div>
+</div>
+<footer>
+    <div id="left_menu">
+        <a href="#" onclick="slowScroll('#main')" title="Услуги">Услуги</a>
+        <a href="#" onclick="slowScroll('#about')" title="О компании">О компании</a>
+    </div>
+    <div id="footer_logo" onclick="slowScroll('#top')">
+        <svg width="38" height="32" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.1504 20.1667V19.3712C28.1504 19.1202 28.5481 18.5 29.0386 18.5H33.2576C33.7481 18.5 34.1458 19.1202 34.1458 19.3712V20.1667" stroke="#18A0FB" stroke-width="2"/>
+            <path d="M24.9387 23.5181V29.5417C24.9387 30.0019 25.3222 30.375 25.7952 30.375H36.5012C36.9742 30.375 37.3577 30.0019 37.3577 29.5417V23.5181M24.9387 23.5181L24.9387 21.2083C24.9387 20.7481 25.3222 20.375 25.7952 20.375H36.5012C36.9742 20.375 37.3577 20.7481 37.3577 21.2083V23.5181M24.9387 23.5181H37.3577" stroke="black"/>
+            <path d="M29.9352 23.8334V23.1667H32.3611V23.8334H29.9352Z" fill="#18A0FB" stroke="#18A0FB"/>
+            <path d="M30.2917 23.5H32.0047" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.50436 26.3667L10.8729 21.9412C14.9957 25.1918 17.4169 25.3049 21.9603 21.9412L30.3288 26.3667C30.9637 26.7736 31.3515 27.5016 31.3515 28.2866C31.3515 29.5264 30.401 30.5315 29.2284 30.5315H3.60473C2.43221 30.5315 1.48169 29.5264 1.48169 28.2866C1.48169 27.5016 1.86947 26.7736 2.50436 26.3667Z" fill="white"/>
+            <path d="M20.4423 19.4898C21.7966 18.3863 22.5888 16.8956 22.8895 15.947C25.2576 15.947 25.4155 11.4647 23.521 11.4647C23.521 11.4647 23.6127 10.8514 23.6467 9.90648V8.50366M20.4423 19.4898C19.4266 20.3175 18.0946 20.9273 16.4166 20.9273C12.5013 20.9273 10.4699 17.6071 9.94366 15.947C7.57555 15.947 7.41765 11.4647 9.31216 11.4647C9.31216 11.4647 9.2205 10.8514 9.1865 9.90648V8.50366M20.4423 19.4898C20.4423 19.4898 20.9912 21.3202 21.9603 21.9412M10.8729 21.9412L2.50436 26.3667C1.86947 26.7736 1.48169 27.5016 1.48169 28.2866C1.48169 29.5264 2.43221 30.5315 3.60473 30.5315H29.2284C30.401 30.5315 31.3515 29.5264 31.3515 28.2866C31.3515 27.5016 30.9637 26.7736 30.3288 26.3667L21.9603 21.9412M10.8729 21.9412C11.842 21.3202 12.3908 19.4898 12.3908 19.4898M10.8729 21.9412C14.9957 25.1918 17.4169 25.3049 21.9603 21.9412" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.9896 12.25C13.9896 12.4788 13.7951 12.6875 13.526 12.6875C13.257 12.6875 13.0625 12.4788 13.0625 12.25C13.0625 12.0212 13.257 11.8125 13.526 11.8125C13.7951 11.8125 13.9896 12.0212 13.9896 12.25ZM19.7708 12.25C19.7708 12.4788 19.5763 12.6875 19.3073 12.6875C19.0383 12.6875 18.8438 12.4788 18.8438 12.25C18.8438 12.0212 19.0383 11.8125 19.3073 11.8125C19.5763 11.8125 19.7708 12.0212 19.7708 12.25Z" fill="black" stroke="black"/>
+            <path d="M8.24487 3.375H24.5886V7.5C24.5886 7.77614 24.3648 8 24.0886 8H8.74487C8.46873 8 8.24487 7.77614 8.24487 7.5V3.375Z" fill="#18A0FB" stroke="#18A0FB"/>
+            <path d="M2.927 12.7188V4.68304C2.927 2.90784 4.22118 1.46875 5.81763 1.46875M16.4163 1.46875H5.57651C5.17739 1.46875 4.85385 1.78355 4.85385 2.17188C4.85385 2.5602 5.17739 2.875 5.57651 2.875H16.4163M16.4163 1.46875H27.2562C27.6553 1.46875 27.9788 1.78355 27.9788 2.17188C27.9788 2.5602 27.6553 2.875 27.2562 2.875H16.4163M16.4163 1.46875V2.875" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.26546 19.3056L2.92693 11.3125L4.5881 19.3056C4.68247 19.6811 4.25358 19.9736 3.92307 19.7592L3.84134 19.7062C3.63043 19.5693 3.34388 19.6771 3.2824 19.9164C3.18984 20.2766 2.66372 20.2766 2.57116 19.9164C2.50968 19.6771 2.22313 19.5693 2.01222 19.7062L1.93049 19.7592C1.59998 19.9736 1.17109 19.6811 1.26546 19.3056Z" fill="#18A0FB"/>
+            <path d="M2.92693 11.3125L3.41647 11.2108C3.36826 10.9788 3.16386 10.8125 2.92694 10.8125C2.69001 10.8125 2.48561 10.9788 2.43739 11.2107L2.92693 11.3125ZM1.26546 19.3056L1.75038 19.4275L1.7529 19.4175L1.755 19.4074L1.26546 19.3056ZM4.5881 19.3056L4.09856 19.4074L4.10066 19.4175L4.10318 19.4275L4.5881 19.3056ZM1.93049 19.7592L1.6584 19.3397L1.65839 19.3397L1.93049 19.7592ZM2.01222 19.7062L1.74012 19.2867L1.74012 19.2867L2.01222 19.7062ZM3.84134 19.7062L4.11344 19.2867L4.11344 19.2867L3.84134 19.7062ZM3.92307 19.7592L3.65097 20.1786L3.65097 20.1787L3.92307 19.7592ZM2.57116 19.9164L3.05543 19.792L2.57116 19.9164ZM2.43739 11.2107L0.775925 19.2039L1.755 19.4074L3.41646 11.4143L2.43739 11.2107ZM2.43739 11.4142L4.09856 19.4074L5.07764 19.2039L3.41647 11.2108L2.43739 11.4142ZM2.20259 20.1787L2.28431 20.1256L1.74012 19.2867L1.6584 19.3397L2.20259 20.1787ZM3.56924 20.1256L3.65097 20.1786L4.19517 19.3397L4.11344 19.2867L3.56924 20.1256ZM3.76666 20.0408C3.7533 20.0929 3.71503 20.1258 3.68187 20.1382C3.64905 20.1506 3.60579 20.1493 3.56925 20.1256L4.11344 19.2867C3.62751 18.9715 2.94809 19.2083 2.79813 19.792L3.76666 20.0408ZM2.28431 20.1256C2.24777 20.1493 2.20451 20.1506 2.17169 20.1382C2.13853 20.1258 2.10026 20.0929 2.08689 20.0408L3.05543 19.792C2.90547 19.2083 2.22605 18.9715 1.74012 19.2867L2.28431 20.1256ZM4.10318 19.4275C4.10013 19.4154 4.10015 19.3938 4.1091 19.3724C4.11672 19.3541 4.12699 19.3447 4.13321 19.3405C4.13946 19.3362 4.14849 19.3324 4.16128 19.3319C4.17688 19.3313 4.18987 19.3363 4.19516 19.3397L3.65097 20.1787C4.32834 20.618 5.28799 20.039 5.07301 19.1838L4.10318 19.4275ZM0.780547 19.1838C0.565574 20.039 1.52522 20.618 2.20259 20.1786L1.65839 19.3397C1.66368 19.3363 1.67668 19.3313 1.69228 19.3319C1.70507 19.3324 1.7141 19.3362 1.72035 19.3405C1.72657 19.3447 1.73684 19.3541 1.74446 19.3724C1.75341 19.3938 1.75343 19.4154 1.75038 19.4275L0.780547 19.1838ZM2.08689 20.0408C2.30811 20.9018 3.54545 20.9018 3.76666 20.0408L2.79813 19.792C2.80499 19.7653 2.82527 19.7329 2.85689 19.7105C2.88409 19.6913 2.90927 19.6866 2.92678 19.6866C2.94429 19.6866 2.96947 19.6913 2.99667 19.7105C3.02829 19.7329 3.04857 19.7653 3.05543 19.792L2.08689 20.0408Z" fill="#18A0FB"/>
+        </svg>
+        <span>Человек и закон</span>
+    </div>
+    <div id="right_menu">
+        <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+        <a href="#" onclick="slowScroll('#feedback')" title="Отзывы">Отзывы</a>
+    </div>
+</footer>
+<footer>
+    <div class="intro">
+        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="24" height="24" fill="url(#pattern0)"/>
+            <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0" transform="translate(-0.0645161 -0.0645161) scale(0.0112903)"/>
+                </pattern>
+                <image id="image0" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+            </defs>
+        </svg>
+        <div>
+            <h2>ТЕЛЕФОН:</h2>
+            <h3>+7 (495) 456-42-11</h3>
+        </div>
+    </div>
+    <div class="intro">
+        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.042 23.6481C4.229 23.6481 0 18.7721 0 12.4771C0 5.75005 4.762 0.352051 13.276 0.352051C19.49 0.352051 24 4.39005 24 9.95305C24 18.6651 13.67 20.9651 14.188 15.9951C13.478 17.1031 12.334 18.3491 10.135 18.3491C7.619 18.3491 6.055 16.5071 6.055 13.5421C6.055 9.09805 8.976 5.34305 12.434 5.34305C14.093 5.34305 15.234 6.21905 15.711 7.56405L16.175 5.93205H18.513C18.269 6.76405 16.192 14.4591 16.192 14.4591C15.544 17.1251 17.542 17.1721 19.314 15.7561C22.643 13.1761 22.815 6.42905 18.316 3.61505C13.495 0.724051 2.521 2.51305 2.521 12.3081C2.521 17.9191 6.471 21.6891 12.35 21.6891C15.786 21.6891 17.892 20.7591 19.645 19.7411L20.822 21.4391C19.111 22.4051 16.361 23.6481 12.042 23.6481ZM9.698 9.34305C8.983 10.6831 8.521 12.4191 8.521 13.7671C8.521 17.3771 12.043 17.4001 13.773 14.0061C14.485 12.6121 14.944 10.8351 14.944 9.47705C14.944 6.56005 11.449 6.04305 9.698 9.34305Z" fill="black"/>
+        </svg>
+        <div>
+            <h2>ПОЧТА:</h2>
+            <h3>uristmoscow@gmail.com</h3>
+        </div>
+    </div>
+    <div class="intro">
+        <svg width="36" height="45" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C6.22775 1 1 5.67913 1 11.4528C1 16.662 4.8848 22.7828 10.2218 31.1917C10.7986 32.1005 11.3924 33.036 12 34C12.6076 33.036 13.2014 32.1005 13.7782 31.1917C19.1152 22.7828 23 16.662 23 11.4528C23 5.67913 17.7736 1 12 1Z" stroke="black" stroke-width="1.5"/>
+        </svg>
+        <div>
+            <h2>АДРЕС:</h2>
+            <h3>г. Москва, ул. Тверская, д.6, стр.1</h3>
+        </div>
+    </div>
+    <div class="intro">
+        <svg width="45" height="45" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 25C19.6274 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13C1 19.6274 6.37258 25 13 25Z" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+            <path d="M12.8058 3.89282V13.0001L9.20068 16.6052" stroke="black" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
+            <path d="M12.8726 14C13.4028 14 13.8326 13.5683 13.8326 13.0358C13.8326 12.5032 13.4028 12.0715 12.8726 12.0715C12.3424 12.0715 11.9126 12.5032 11.9126 13.0358C11.9126 13.5683 12.3424 14 12.8726 14Z" fill="black"/>
+        </svg>
+        <div>
+            <h2>РЕЖИМ РАБОТЫ:</h2>
+            <h3>Круглосуточно, с 9:00 до 21:00.</h3>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function slowScroll(id) {
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 500);
+    }
+
+    $(document).on("scroll", function () {
+        if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+        else
+            $("header").attr("class", "fixed");
+    });
+</script>
+</body>
+</html>

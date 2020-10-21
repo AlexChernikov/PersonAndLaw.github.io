@@ -1,0 +1,14 @@
+{
+  "user1": {
+    "name" : "Иван Иванович Иванов",
+    "login" : "user1",
+    "password" : "user"},
+  "user2": {
+    "name" : "Ваня Иванович Иванов",
+    "login" : "user2",
+    "password" : "user"},
+  "user3": {
+    "name" : "Аня Иванович Иванов",
+    "login" : "user3",
+    "password" : "user"}
+}
