@@ -282,6 +282,7 @@ header {
 }
 
 #contacts {
+    display: none;
     float: left;
     border-top: 2px solid silver;
     color: black;
@@ -810,3 +811,11 @@ input[type=text], input[type=password] {
     border: 1px #18A0FB;
     box-shadow: 0 0 10px #18A0FB;
 }
+
+#ct{
+    display: none;
+}
+
+#ct1{
+     display: none;
+ }

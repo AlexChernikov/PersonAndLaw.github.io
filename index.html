@@ -51,12 +51,12 @@
     <div id="menu">
         <a href="#" onclick="slowScroll('#main')" title="Услуги">Услуги</a>
         <a href="#" onclick="slowScroll('#about')" title="О компании">О компании</a>
-        <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+        <a id="ct" href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
         <a href="#" onclick="slowScroll('#staff')" title="Сотрудники">Сотрудники</a>
         <a href="#" onclick="slowScroll('#feedback')" title="Отзывы">Отзывы</a>
     </div>
     <div id="button">
-        <a href="#" onclick="openForm()">Вход</a>
+        <a id="lb" href="#" onclick="checkLogin()">Вход</a>
     </div>
 </header>
 
@@ -296,7 +296,7 @@
         <span>Человек и закон</span>
     </div>
     <div id="right_menu">
-        <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+        <a id ="ct1" href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
         <a href="#" onclick="slowScroll('#feedback')" title="Отзывы">Отзывы</a>
     </div>
 </footer>
@@ -360,6 +360,15 @@
         else
             $("header").attr("class", "fixed");
     });
+
+    var modal = document.getElementById('id01');
+
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+    var entered = false;
 </script>
 </body>
 </html>
