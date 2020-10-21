@@ -3,9 +3,8 @@ function validate(){
   var password = document.getElementById("password").value;
   $.getJSON("logins.json", function(json) {
     $.each(json, function(i, user) {
-      console.log(user);
       if(username === user.login && password === user.password) {
-        alert ("Login successfully. Welcome, " + user.name);
+        alert ("Здравствуйте, " + user.firstName);
         closeForm()
       }
     });

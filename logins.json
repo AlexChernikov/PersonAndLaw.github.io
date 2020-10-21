@@ -1,14 +1,20 @@
 {
   "user1": {
-    "name" : "Иван Иванович Иванов",
-    "login" : "user1",
-    "password" : "user"},
+    "firstName" : "Иван",
+    "lastName" : "Иванов",
+    "login" : "ivanov@gmail.com",
+    "password" : "ivanov"
+  },
   "user2": {
-    "name" : "Ваня Иванович Иванов",
-    "login" : "user2",
-    "password" : "user"},
+    "firstName" : "Фёдор",
+    "lastName" : "Пучков",
+    "login" : "puchkov@mail.ru",
+    "password" : "puchkov"
+  },
   "user3": {
-    "name" : "Аня Иванович Иванов",
-    "login" : "user3",
-    "password" : "user"}
+    "firstName" : "Анна",
+    "lastName" : "Вольская",
+    "login" : "volskaya@gmail.com",
+    "password" : "volskaya"
+  }
 }
