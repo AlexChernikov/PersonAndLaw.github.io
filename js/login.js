@@ -11,8 +11,7 @@ function validate() {
                 closeForm()
                 entered = true;
                 document.getElementById("ct").style.display = 'inline';
-                document.getElementById("ct1").style.display = 'inline';
-                document.getElementById("contacts").style.display = 'inline';
+                document.getElementById("staff").style.display = 'inline';
             }
         });
         if (incorrect) {
@@ -30,8 +29,7 @@ function checkLogin() {
     } else {
         document.getElementById("lb").innerText = "Вход";
         document.getElementById("ct").style.display = 'none';
-        document.getElementById("ct1").style.display = 'none';
-        document.getElementById("contacts").style.display = 'none';
+        document.getElementById("staff").style.display = 'none';
         entered = false;
         slowScroll('#top')
     }

@@ -86,11 +86,11 @@ header {
 
 #button {
     display: inline-block;
-    width: 23%;
+    margin-left: 10%;
+    width: 13%;
 }
 
 #button > a{
-    margin-left: 60%;
     color: #18A0FB;
     font-weight: 700;
     text-decoration: none;
@@ -282,7 +282,6 @@ header {
 }
 
 #contacts {
-    display: none;
     float: left;
     border-top: 2px solid silver;
     color: black;
@@ -329,6 +328,7 @@ header {
 
 #staff {
     float: left;
+    display: none;
     background-color: white;
     border-top: 2px solid silver;
     color: black;
@@ -618,6 +618,23 @@ footer {
     text-decoration: none;
     padding: 10%;
     color: #18A0FB
+}
+
+@media (min-width: 1610px) {
+    #right_menu > a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1610px) {
+    #right_menu > a {
+        font-size: 15px;
+    }
+}
+
+#right_menu > a:hover {
+    color: slategray;
+    text-decoration: underline;
 }
 
 @media (min-width: 1800px) {
