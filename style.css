@@ -36,7 +36,7 @@ header {
 
 #logo span {
     font-size: 1.6em;
-    line-height: 45px;
+    line-height: 44px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -49,6 +49,12 @@ header {
 @media (max-width: 1610px) {
     #logo {
         font-size: 0.9em;
+    }
+}
+
+@media (max-width: 1360px) {
+    #logo {
+        font-size: 0.7em;
     }
 }
 
@@ -76,6 +82,12 @@ header {
 @media (max-width: 1610px) {
     #menu > a {
         font-size: 17px;
+    }
+}
+
+@media (max-width: 1360px) {
+    #menu > a {
+        font-size: 13px;
     }
 }
 
